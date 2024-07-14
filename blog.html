@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+<div id="app">
+    <nav class="navigation">
+      <div class="logo">
+        <img class="logo-photo" src="./images/Logo.png" alt="" />
+        <p class="logo-text">Interno</p>
+      </div>
+      <div class="nav-menu">
+        <a href="index.html" class="nav-menu-text">Домой</a>
+        <a href="" class="nav-menu-text">Проект</a>
+        <a href="#" class="nav-menu-text">Блог</a>
+      </div>
+    </nav>
+    <div class="blog-banner">
+      <img src="./images/blog-banner.png" alt="" class="blog-banner-img" />
+      <div class="blog-banner-title">
+        <p class="blog-banner-text">
+          Статьи & <br />
+          Новости
+        </p>
+        <p class="blog-banner-description">
+          Домой / <br />
+          Блог
+        </p>
+      </div>
+    </div>
+    <div class="last-post-container">
+      <div class="wrapper-post">
+        <p class="post-title">Последний пост</p>
+        <div class="post-content">
+          <img src="./images/last-post.png" alt="" class="post-img" />
+          <div class="post-content-text">
+            <p class="post-content-text-title">
+              Low Cost Latest Invented Interior Designing Ideas
+            </p>
+            <p class="post-content-text-description">
+              С того времени этот, похожий на латинский, <br />
+              текст стал стандартом в печатной <br />
+              промышленности для примеров шрифтов и текстов. Перед появлением
+              электронных <br />
+              издательств дизайнеры импровизировали в <br />
+              работе над макетами, изображая текст при <br />
+              помощи волнистых линий. С появлением <br />
+              самоклеющихся наклеек с напечатанным текстом «Lorem ipsum»
+              появился более <br />
+              реалистичный способ обозначения <br />
+              расположения текста на странице.
+            </p>
+            <div class="post-data-text">
+              <p class="post-data-text-time">26 December,2022</p>
+              <img src="./images/next.png" alt="" class="next-button-2" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="news-wrapper">
+        <p class="news-wrapper-title">Статьи & Новости</p>
+      <div class="blog-card-container-page-blog">
+        <div class="blog-card" v-for="card in cards" :key="id"> 
+          <div class="img-container-3" >
+            <!-- <p class="img-container-text">
+              Дизайн <br />
+              Интерьера -->
+              <img :src="card.src" alt="" class="blog-card-img">
+            </p>
+          </div>
+          <p class="blog-title">{{card.title}}</p>
+          <div class="blog-description">
+            <p class="blog-description-text">{{card.date}}</p>
+            <a href=""><img src="./images/next.png" alt="" class="next-button-2" /></a> 
+          </div>
+        </div>
+      </div>
+      <div class="news-buttons">
+        <div class="news-button-container">
+          <a href=""><p class="news-button-number">01</p></a>
+        </div>
+        <div class="news-button-container">
+          <a href=""><p class="news-button-number">02</p></a>
+        </div>
+        <div class="news-button-container">
+            <a href=""><p class="news-button-number">03</p></a>
+        </div>
+        <div class="news-button-container">
+            <a href=""><img
+            src="./images/next-blog.png"
+            alt="photo"
+            class="news-button-next"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-container">
+      <div class="footer-content">
+        <div class="logo-container">
+          <div class="logo">
+            <img class="logo-photo" src="./images/Logo.png" alt="" />
+            <p class="logo-text">Interno</p>
+          </div>
+          <div class="twit-in-container">
+            <img src="./images/twit.png" alt="" class="twitter" />
+            <img src="./images/in.png" alt="" class="in" />
+          </div>
+        </div>
+      </div>
+      <div class="fotter-content">
+        <p class="footer-content-title">Страницы</p>
+        <a href="" class="footer-content-text">Домой</a> <br>
+        <a href=""  class="footer-content-text">Проект</a> <br>
+        <a href=""  class="footer-content-text">Блог</a>
+      </div>
+      <div class="footer-content">
+        <p class="footer-content-title">Контакты</p>
+        <p class="footer-content-text">
+          55 East Birchwood Ave. <br />
+          Brooklyn, New York 11201
+        </p>
+        <p class="footer-content-text">contact@interno.com</p>
+        <p class="footer-content-text">(123) 456 - 7890</p>
+      </div>
+    </footer>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script>
+        new Vue({
+  el: "#app",
+  data: {
+    cards: [
+      {
+        id: 1,
+        src: "./images/Image8.png",
+        title: "Лучшие интерьерные идеи по низкой цене",
+        date: "26 Декабрь,2022",
+      },
+      {
+        id: 2,
+        src: "./images/Image9.png",
+        title: "Лучшие интерьерные идеи по низкой цене",
+        date: "26 Декабрь,2022",
+      },
+      {
+        id: 3,
+        src: "./images/Image10.png",
+        title: "Лучшие интерьерные идеи по низкой цене",
+        date: "26 Декабрь,2022",
+      },
+      {
+        id: 4,
+        src: "./images/Image11.png",
+        title: "Лучшие интерьерные идеи по низкой цене",
+        date: "26 Декабрь,2022",
+      },
+      {
+        id: 5,
+        src: "./images/Image12.png",
+        title: "Лучшие интерьерные идеи по низкой цене",
+        date: "26 Декабрь,2022",
+      },
+      {
+        id: 6,
+        src: "./images/Image13.png",
+        title: "Лучшие интерьерные идеи по низкой цене",
+        date: "26 Декабрь,2022",
+      }
+    ]
+  },
+
+  methods: {
+    
+  },
+});
+
+    </script>
+    <script src="./main.js"></script>
+  </body>
+</html>
