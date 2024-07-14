@@ -64,7 +64,7 @@ a {
 .banner {
   width: 1201px;
   height: 758px;
-  background-image: url(../images/banner.png);
+  background-image: url(./images/banner.png);
 }
 
 .banner-content {
@@ -342,7 +342,7 @@ a {
   height: 52px;
 }
 
-.fotter-container {
+.footer-container {
   display: flex;
   justify-content: center;
   gap: 310px;
@@ -359,7 +359,13 @@ a {
   padding-right: 54px;
 }
 
-.fotter-content-title {
+.fotter-content{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-content-title {
   font-family: "Jost-VariableFont_wght";
   color: rgb(41, 47, 54);
   font-size: 25px;
@@ -367,10 +373,151 @@ a {
   padding-bottom: 25px;
 }
 
-.fotter-content-text{
-    font-family: "Jost-VariableFont_wght";
-    color: rgb(41, 47, 54);
-    font-size: 22px;
-    font-weight: 400;
-    padding-bottom: 25px;
+.footer-content-text {
+  font-family: "Jost-VariableFont_wght";
+  color: rgb(41, 47, 54);
+  font-size: 22px;
+  font-weight: 400;
+}
+
+/*blog style */
+
+.blog-banner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.blog-banner-title {
+  position: absolute;
+  width: 503px;
+  height: 274px;
+  margin-top: 178px;
+  border-radius: 37px 37px 0px 0px;
+  background: rgb(255, 255, 255);
+}
+
+.blog-banner-text {
+  padding-top: 41px;
+  padding-left: 78px;
+  font-family: "Jost-VariableFont_wght";
+  color: rgb(41, 47, 54);
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.blog-banner-description {
+  padding-left: 165px;
+  color: rgb(77, 80, 83);
+  font-family: "Jost-VariableFont_wght";
+  text-align: left;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.wrapper-post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 220px;
+  margin: auto;
+  width: 1201px;
+  padding-bottom: 88px;
+}
+
+.post-title {
+  font-family: "Jost-VariableFont_wght";
+  color: rgb(41, 47, 54);
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.post-content {
+  display: flex;
+  justify-content: center;
+  gap: 65px;
+  padding-top: 27px;
+}
+
+.post-content-text {
+  width: 489px;
+}
+
+.post-content-text-title {
+  font-family: "DMSerifDisplay-Regular";
+  padding-bottom: 22px;
+  width: 463px;
+  color: rgb(41, 47, 54);
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.post-content-text-description {
+  font-family: "Jost-VariableFont_wght";
+  color: rgb(77, 80, 83);
+  font-size: 22px;
+  font-weight: 400;
+  padding-bottom: 41px;
+}
+
+.post-data-text {
+  display: flex;
+  align-items: center;
+  gap: 214px;
+}
+
+.post-data-text-time {
+  font-family: "Jost-VariableFont_wght";
+  color: rgb(77, 80, 83);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.news-wrapper {
+  width: 1201px;
+  margin: auto;
+}
+
+.news-wrapper-title {
+  padding-bottom: 30px;
+  font-family: "Jost-VariableFont_wght";
+  color: rgb(41, 47, 54);
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.blog-card-container-page-blog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 72px;
+  width: 1201px;
+}
+
+.news-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 200px;
+}
+
+.news-button-container {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid rgb(205, 162, 116);
+  text-align: center;
+}
+
+.news-button-number {
+  padding-top: 14px;
+  font-family: "Jost-VariableFont_wght";
+  color: rgb(41, 47, 54);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.news-button-next {
+  padding-top: 17px;
 }
