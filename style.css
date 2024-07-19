@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -359,7 +360,7 @@ a {
   padding-right: 54px;
 }
 
-.fotter-content{
+.fotter-content {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -520,4 +521,151 @@ a {
 
 .news-button-next {
   padding-top: 17px;
+}
+
+.blog-details-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items:baseline;
+  margin-top: 200px;
+  gap: 57px;
+  margin-bottom: 63px;
+}
+
+.blog-details-cards {
+  width: 799px;
+  padding-bottom: 35px;
+}
+
+.blog-details-card-title {
+  font-family: "Jost-VariableFont_wght";
+  color: rgb(41, 47, 54);
+  font-size: 50px;
+  font-weight: 400;
+  padding-bottom: 11px;
+}
+
+.blog-details-card-description {
+  display: flex;
+  gap: 409px;
+}
+
+.blog-description-date {
+  font-family: "Jost-VariableFont_wght";
+  color: rgb(77, 80, 83);
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 46px;
+}
+
+.blog-details-description-text {
+  font-family: "Jost-VariableFont_wght";
+  color: rgb(77, 80, 83);
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 46px;
+}
+
+.blog-details-card-article {
+  font-family: "Jost-VariableFont_wght";
+  color: rgb(77, 80, 83);
+  font-size: 22px;
+  padding-top: 48px;
+  padding-bottom: 35px;
+}
+
+.blog-details-tegs{
+  width: 345px;
+}
+
+.blog-details-teg-title {
+  font-family: "Jost-VariableFont_wght";
+  color: rgb(41, 47, 54);
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.blog-details-teg-name{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px ;
+  width: 335px;
+  padding-top: 24px;
+}
+
+.kitchen{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 106px;
+  height: 41px;
+  background-color: rgb(244, 240, 236);
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: "Jost-VariableFont_wght";
+  color: rgb(41, 47, 54);
+}
+
+.bedroom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 131px;
+  height: 41px;
+  background-color: rgb(244, 240, 236);
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: "Jost-VariableFont_wght";
+  color: rgb(41, 47, 54);
+}
+
+.building{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 123px;
+  height: 41px;
+  background-color: rgb(244, 240, 236);
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: "Jost-VariableFont_wght";
+  color: rgb(41, 47, 54);
+}
+
+.architecture{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 158px;
+  height: 41px;
+  background-color: rgb(244, 240, 236);
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: "Jost-VariableFont_wght";
+  color: rgb(41, 47, 54);
+}
+
+.layout{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 160px;
+  height: 41px;
+  background-color: rgb(244, 240, 236);
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: "Jost-VariableFont_wght";
+  color: rgb(41, 47, 54);
+}
+
+.teg:hover{
+  background-color: rgb(41, 47, 54);
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+  cursor: pointer;
 }
